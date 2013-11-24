@@ -1,0 +1,10 @@
+Author: Justice Amoh
+Date: 11/24/2013
+Description: A repository for all configuration files for my customized Unix environment
+
+
+./bash/
+includes bash files like bashrc, bashprofile, etc
+
+./vim/
+includes vim customizations like .vim, .vimrc, etc
