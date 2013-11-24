@@ -1,0 +1,50 @@
+# This file is sourced by bash in every shell.  After editing this      
+# file, type ‘source .bashrc’ in any shell which is already open and       
+# in which you want the changes to take effect.  For more info type         
+# ‘man bash’.                                                             
+# Aliases                                  
+alias mygcc='gcc -Wall -pedantic -std=c99'
+# use the Aquamacs as default editor too                          
+#alias aemacs=’open /Applications/Aquamacs\ Emacs.app’         
+
+# To be safe aliases                                                          
+alias clc='clear'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias mkdir='mkdir -p'
+alias h='history'
+alias j='jobs -l'
+alias r='rlogin'
+alias which='type -all'
+alias ll='ls -lah'
+alias du='du -kh'
+alias df='df -kTh'
+alias lf='ls -l | grep -v ’^d’'
+alias ldir='ls -l | grep ’^d’'
+alias ccd='cd /thayerfs/courses/12fall/engs089/Team\ Workspace/BlueprintReader'
+alias emacs='emacs -nw'
+
+# Set PS1 prompt                                                             
+#export PS1=’[\u@\h \W]\$ ’
+
+# for easy git committing
+function gc() {
+  git commit -am "$*"
+}
+
+# for easy git adding
+function ga() {
+  git add "$*"
+}
+
+# for easy git branching
+function gco() {
+  git checkout "$*"
+}
+
+alias gp='git push'
+alias gphm='git push heroku master' 
+alias glog='git log'
+alias gs='git status'
+alias gb='git branch'
